@@ -10,7 +10,7 @@ public class RunApplication {
         wage = employee.calculateWage(20);
         System.out.println("Wage: " + wage);
 
-        employee = new Employee(10_000, 0);
+        employee = new Employee(10_000);
         wage = employee.calculateWage();
         System.out.println("Wage: " + wage);
     }

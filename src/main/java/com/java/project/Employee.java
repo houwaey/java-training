@@ -1,11 +1,17 @@
 package com.java.project;
 
-import lombok.AllArgsConstructor;
-
-@AllArgsConstructor
 public class Employee {
-    private int baseSalary;
-    private int hourlyRate;
+    private final int baseSalary;
+    private final int hourlyRate;
+
+    public Employee(int baseSalary) {
+        this(baseSalary, 0);
+    }
+
+    public Employee(int baseSalary, int hourlyRate) {
+        this.baseSalary = baseSalary;
+        this.hourlyRate = hourlyRate;
+    }
 
     public int calculateWage() {
         return calculateWage(0);
