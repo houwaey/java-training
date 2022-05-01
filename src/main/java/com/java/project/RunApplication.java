@@ -6,6 +6,8 @@ public class RunApplication {
         int wage = employee.calculateWage(20);
         System.out.println("Wage: " + wage);
 
+        Employee.printNumberOfEmployees();
+
         employee = new Employee(100_000, 20);
         wage = employee.calculateWage(20);
         System.out.println("Wage: " + wage);

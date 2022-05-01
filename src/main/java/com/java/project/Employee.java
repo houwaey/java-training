@@ -3,6 +3,7 @@ package com.java.project;
 public class Employee {
     private final int baseSalary;
     private final int hourlyRate;
+    private static int numberOfEmployees;
 
     public Employee(int baseSalary) {
         this(baseSalary, 0);
@@ -11,6 +12,7 @@ public class Employee {
     public Employee(int baseSalary, int hourlyRate) {
         this.baseSalary = baseSalary;
         this.hourlyRate = hourlyRate;
+        numberOfEmployees++;
     }
 
     public int calculateWage() {
@@ -19,5 +21,9 @@ public class Employee {
 
     public int calculateWage(int extraHours) {
         return baseSalary + (extraHours * hourlyRate);
+    }
+
+    public static void printNumberOfEmployees() {
+        System.out.println("No. of Employees: " + numberOfEmployees);
     }
 }
