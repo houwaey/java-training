@@ -1,8 +1,8 @@
 package com.java.project;
 
-import lombok.Setter;
+import lombok.AllArgsConstructor;
 
-@Setter
+@AllArgsConstructor
 public class Employee {
     private int baseSalary;
     private int hourlyRate;
